@@ -1,0 +1,53 @@
+background(0, 0, 0);
+
+var animeNumber = 0;
+  
+  draw= function() {
+      
+if (animeNumber >= 20) {
+    // top left
+    fill(255, 0, 0);
+    rect(101, 80, 100, 100);
+}
+
+if (animeNumber >= 30) {
+    // top right
+    fill(0, 255, 68);
+    rect(201, 80, 100, 100);
+}
+
+if (animeNumber >= 40) {
+    // bottom RAGHT
+    fill(255, 238, 0);
+    rect(201, 180, 100, 100);
+}
+
+if (animeNumber >= 50) {
+    // bottom LAFT
+    fill(34, 0, 255);
+    rect(101, 180, 100, 100);
+}
+if (animeNumber >= 60) {
+fill(153, 153, 153);
+textSize(23);
+text("MICROSOFT WINDOWS", 134, 303, 132, 117);
+
+}
+
+if(animeNumber >= 90) {
+fill(204, 207, 0);
+textSize(13);
+text("animated by Fire_Light", 138, 357, 206, 142);
+}
+animeNumber = animeNumber+0.3;
+
+
+if(animeNumber >= 120) {
+    background(0, 0, 0);
+    fill(153, 153, 153);
+textSize(23);
+text("thank you for watching, this took a long time", 45, 186, 352, 101);
+playSound(getSound("retro/coin"));
+
+}
+  };
